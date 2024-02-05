@@ -1,0 +1,25 @@
+<mat-card class="example-card" *ngIf="juego">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{juego.titulo}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{juego.foto}}" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <ul>
+    <li>
+      <b>Edad:</b> {{juego.pegi}}
+      </li>
+      <li>
+      <b>Descripcion:</b> {{juego.descripcion}}
+    </li>
+    <li>
+      <b>Plataforma:</b> {{juego.plataforma}}
+    </li>
+  </ul>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Comprar</button>
+    <button mat-button>Like</button>
+  </mat-card-actions>
+</mat-card>
+
